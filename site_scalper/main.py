@@ -7,7 +7,7 @@ import time
 from datetime import datetime
 import os
 
-SERVICE_ACCOUNT_FILE = url = os.environ.get("SERVICE_ACCOUNT_FILE")
+SERVICE_ACCOUNT_FILE = os.environ.get("SERVICE_ACCOUNT_FILE")
 WORKER_EMAIL_ADDRESS = os.environ.get("WORKER_EMAIL")
 
 def scalpText(site, subject, sender, hit_str1, hit_str2, mail_text, neg_str, recipients):

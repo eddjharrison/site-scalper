@@ -13,12 +13,13 @@ setuptools.setup(
     url='https://github.com/eddjharrison/site-scalper',
     packages=setuptools.find_packages(),
     install_requires=[
-            "googleapiclient",
-            "google"
+            "google-api-python-client==2.47.0",
+            "google-api-core==2.7.3",
+            "google-auth-oauthlib==0.4.6"
     ],
     entry_points={
         'console_scripts': [
-            'site-sclaper = site_scalper:main',
+            'site-sclaper = site_scalper:run',
         ],
     },
 )
